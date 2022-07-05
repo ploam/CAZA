@@ -12,8 +12,8 @@ export default function handler(req, res) {
     console.log("Proof: ");
     console.log(JSON.stringify(proof, null, 1));
 
-    const vKey = JSON.parse(fs.readFileSync("verification_key.json"));
-
+    //const vKey = JSON.parse(fs.readFileSync("verification_key.json"));
+    const vKey = JSON.parse(fs.readFileSync("false_key.json"));
     const result = await snarkjs.groth16.verify(vKey, publicSignals, proof);
 
     if (result === true) {
