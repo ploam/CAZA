@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@iden3/js-iden3-auth": "^0.1.4",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "18.2.0",
+    "snarkjs": "^0.4.22"
   },
   "devDependencies": {
     "eslint": "8.18.0",
